@@ -17,7 +17,7 @@ import ProjectCard from '@/components/ProjectCard.vue'
       </div>
     </GlassCard>
 
-    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+    <div class="grid md:grid-cols-2 xl:grid-cols-2 gap-6">
       <ProjectCard />
       <ProjectCard />
       <ProjectCard />

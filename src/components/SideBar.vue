@@ -76,7 +76,7 @@ onMounted(() => {
       </nav>
 
       <div class="mt-auto space-y-4">
-        <!-- <button
+        <button
           type="button"
           class="flex w-full items-center justify-between rounded-xl bg-slate-100 dark:bg-white/5 px-4 py-3"
           @click="toggleTheme"
@@ -93,7 +93,7 @@ onMounted(() => {
               :class="isDark ? 'translate-x-5' : ''"
             ></div>
           </div>
-        </button> -->
+        </button>
         <p class="mt-4 text-xs text-slate-500">© 2026 GitheTrunk. All rights reserved.</p>
       </div>
     </div>

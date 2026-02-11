@@ -21,9 +21,9 @@ const stats = [
     accent: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-500/20 dark:text-emerald-300',
   },
   {
-    label: 'Blogs',
-    value: 0,
-    icon: 'pi pi-pencil',
+    label: 'Current learning',
+    value: 4,
+    icon: 'pi pi-book',
     accent: 'bg-sky-100 text-sky-700 dark:bg-sky-500/20 dark:text-sky-300',
   },
 ]

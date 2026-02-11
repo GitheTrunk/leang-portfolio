@@ -14,14 +14,14 @@ import SideBar from '@/components/SideBar.vue'
       class="pointer-events-none absolute -bottom-24 left-10 h-72 w-72 rounded-full bg-cyan-200/50 dark:bg-cyan-500/10 blur-3xl"
     ></div>
 
-    <div class="grid grid-cols-12 gap-6">
-      <aside class="col-span-12 lg:col-span-3">
+    <div class="grid grid-cols-12 gap-6 lg:h-[calc(100vh-3rem)] lg:overflow-hidden">
+      <aside class="col-span-12 lg:col-span-3 lg:h-full lg:overflow-y-auto">
         <SideBar />
       </aside>
-      <main class="col-span-12 lg:col-span-6">
+      <main class="col-span-12 lg:col-span-6 lg:h-full lg:overflow-y-auto">
         <router-view />
       </main>
-      <aside class="col-span-12 lg:col-span-3">
+      <aside class="col-span-12 lg:col-span-3 lg:h-full lg:overflow-y-auto">
         <RightPanel />
       </aside>
     </div>

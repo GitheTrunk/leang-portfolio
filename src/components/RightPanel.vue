@@ -2,10 +2,113 @@
 import GlassCard from './GlassCard.vue'
 import 'primeicons/primeicons.css'
 
+const listTechStack = [
+  {
+    name: 'Vue',
+    icon: 'fa-brands fa-vuejs',
+    accent: 'bg-green-100 text-green-700 dark:bg-green-500/20 dark:text-green-300',
+  },
+  {
+    name: 'Vite',
+    icon: 'devicon-vitejs-plain',
+    accent: 'bg-yellow-100 text-yellow-700 dark:bg-yellow-500/20 dark:text-yellow-300',
+  },
+  {
+    name: 'TypeScript',
+    icon: 'fa-brands fa-typescript',
+    accent: 'bg-blue-100 text-blue-700 dark:bg-blue-500/20 dark:text-blue-300',
+  },
+  {
+    name: 'Java',
+    icon: 'fa-brands fa-java',
+    accent: 'bg-red-100 text-red-700 dark:bg-red-500/20 dark:text-red-300',
+  },
+  {
+    name: 'HTML',
+    icon: 'fa-brands fa-html5',
+    accent: 'bg-orange-100 text-orange-700 dark:bg-orange-500/20 dark:text-orange-300',
+  },
+  {
+    name: 'CSS',
+    icon: 'fa-brands fa-css3-alt',
+    accent: 'bg-sky-100 text-sky-700 dark:bg-sky-500/20 dark:text-sky-300',
+  },
+  {
+    name: 'JavaScript',
+    icon: 'fa-brands fa-js',
+    accent: 'bg-yellow-100 text-yellow-700 dark:bg-yellow-500/20 dark:text-yellow-300',
+  },
+  {
+    name: 'Node.js',
+    icon: 'fa-brands fa-node-js',
+    accent: 'bg-green-100 text-green-700 dark:bg-green-500/20 dark:text-green-300',
+  },
+  {
+    name: 'Express',
+    icon: 'fa-solid fa-server',
+    accent: 'bg-gray-100 text-gray-700 dark:bg-gray-500/20 dark:text-gray-300',
+  },
+  {
+    name: 'Git',
+    icon: 'fa-brands fa-git-alt',
+    accent: 'bg-orange-100 text-orange-700 dark:bg-orange-500/20 dark:text-orange-300',
+  },
+  {
+    name: 'Docker',
+    icon: 'fa-brands fa-docker',
+    accent: 'bg-blue-100 text-blue-700 dark:bg-blue-500/20 dark:text-blue-300',
+  },
+  {
+    name: 'Tailwind',
+    icon: 'devicon-tailwindcss-plain',
+    accent: 'bg-teal-100 text-teal-700 dark:bg-teal-500/20 dark:text-teal-300',
+  },
+  {
+    name: 'Python',
+    icon: 'fa-brands fa-python',
+    accent: 'bg-yellow-100 text-yellow-700 dark:bg-yellow-500/20 dark:text-yellow-300',
+  },
+  {
+    name: 'Linux',
+    icon: 'fa-brands fa-linux',
+    accent: 'bg-gray-100 text-gray-700 dark:bg-gray-500/20 dark:text-gray-300',
+  },
+  {
+    name: 'Cisco',
+    icon: 'fa-solid fa-network-wired',
+    accent: 'bg-blue-100 text-blue-700 dark:bg-blue-500/20 dark:text-blue-300',
+  },
+  {
+    name: 'MySQL',
+    icon: 'fa-solid fa-database',
+    accent: 'bg-blue-100 text-blue-700 dark:bg-blue-500/20 dark:text-blue-300',
+  },
+  {
+    name: 'PostgreSQL',
+    icon: 'fa-solid fa-database',
+    accent: 'bg-blue-100 text-blue-700 dark:bg-blue-500/20  dark:text-blue-300',
+  },
+  {
+    name: 'Supabase',
+    icon: 'fa-solid fa-cloud',
+    accent: 'bg-green-100 text-green-700 dark:bg-green-500/20 dark:text-green-300',
+  },
+  {
+    name: 'Flutter',
+    icon: 'fa-brands fa-flutter',
+    accent: 'bg-blue-100 text-blue-700 dark:bg-blue-500/20 dark:text-blue-300',
+  },
+  {
+    name: 'Dart',
+    icon: 'fa-brands fa-dart',
+    accent: 'bg-blue-100 text-blue-700 dark:bg-blue-500/20 dark:text-blue-300',
+  },
+]
+
 const listLearning = [
   { name: 'Improve Management in Teams' },
   { name: 'Create Better Dashboards' },
-  { name: 'Learn new thinks' },
+  { name: 'Learn new things' },
   { name: 'Explore new tools' },
 ]
 
@@ -24,28 +127,23 @@ const listInTouch = [
         <h3 class="font-semibold"><i class="pi pi-cog pr-2"></i>Tech Stack</h3>
         <span class="text-xs text-slate-500">2026</span>
       </div>
-      <div
-        class="grid grid-cols-2 xl:grid-cols-4 gap-3 text-[11px] text-slate-600 dark:text-slate-300"
-      >
+      <div class="overflow-hidden">
         <div
-          class="rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-white/5 p-2.5 text-center"
+          class="flex items-center gap-6 text-[11px] text-slate-600 dark:text-slate-300 tech-marquee"
         >
-          <div
-            class="mx-auto mb-2 h-8 w-8 rounded-lg bg-blue-100 text-blue-700 dark:bg-blue-500/20 dark:text-blue-300 flex items-center justify-center"
+          <template
+            v-for="(item, index) in [...listTechStack, ...listTechStack]"
+            :key="`${item.name}-${index}`"
           >
-            V
-          </div>
-          <span class="block truncate">Vue</span>
-        </div>
-        <div
-          class="rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-white/5 p-2.5 text-center"
-        >
-          <div
-            class="mx-auto mb-2 h-8 w-8 rounded-lg bg-cyan-100 text-cyan-700 dark:bg-cyan-500/20 dark:text-cyan-300 flex items-center justify-center"
-          >
-            TS
-          </div>
-          <span class="block truncate">TypeScript</span>
+            <div class="flex shrink-0 items-center gap-2 p-2">
+              <div
+                :class="`h-10 w-10 shrink-0 rounded-lg ${item.accent} flex items-center justify-center`"
+              >
+                <i :class="item.icon" class="text-xl"></i>
+              </div>
+              <span class="whitespace-nowrap">{{ item.name }}</span>
+            </div>
+          </template>
         </div>
       </div>
     </GlassCard>
@@ -72,6 +170,8 @@ const listInTouch = [
           :key="item.name"
           :href="item.href"
           class="flex items-center gap-1 rounded-xl bg-slate-100 dark:bg-slate-800 px-3 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <i :class="item.icon"></i>
         </a>
@@ -82,3 +182,23 @@ const listInTouch = [
     </GlassCard>
   </div>
 </template>
+
+<style scoped>
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.tech-marquee {
+  animation: marquee 50s linear infinite;
+  width: max-content;
+}
+
+.tech-marquee:hover {
+  animation-play-state: pau3sed;
+}
+</style>
