@@ -19,7 +19,7 @@ import ProjectCard from '@/components/ProjectCard.vue'
           </p>
         </div>
         <RouterLink class="text-sm text-blue-600 hover:text-blue-500" to="/projects">
-          View all →
+          View all <i class="pi pi-arrow-right pl-2"></i>
         </RouterLink>
       </div>
       <div class="grid lg:grid-cols-2 gap-6">

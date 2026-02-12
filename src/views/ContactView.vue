@@ -1,5 +1,37 @@
 <script setup>
 import GlassCard from '@/components/GlassCard.vue'
+import { ref } from 'vue'
+import emailjs from 'emailjs-com'
+
+const name = ref('')
+const email = ref('')
+const message = ref('')
+
+const sendMessage = async () => {
+  if (!name.value || !email.value || !message.value) {
+    alert('Please fill all fields')
+    return
+  }
+
+  try {
+    await emailjs.send(
+      import.meta.env.VITE_SERVICE_ID,
+      import.meta.env.VITE_TEMPLATE_ID,
+      {
+        from_name: name.value,
+        from_email: email.value,
+        message: message.value,
+      },
+      import.meta.env.VITE_USER_ID,
+    )
+    alert('Message sent!')
+    name.value = ''
+    email.value = ''
+    message.value = ''
+  } catch (err) {
+    alert('Error: ' + err.text)
+  }
+}
 </script>
 
 <template>
@@ -19,6 +51,7 @@ import GlassCard from '@/components/GlassCard.vue'
               type="text"
               placeholder="Your name"
               class="mt-2 w-full rounded-xl bg-slate-900/60 border border-white/10 px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/50"
+              v-model="name"
             />
           </div>
           <div>
@@ -28,6 +61,7 @@ import GlassCard from '@/components/GlassCard.vue'
               type="email"
               placeholder="you@email.com"
               class="mt-2 w-full rounded-xl bg-slate-900/60 border border-white/10 px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/50"
+              v-model="email"
             />
           </div>
           <div>
@@ -37,11 +71,13 @@ import GlassCard from '@/components/GlassCard.vue'
               rows="5"
               placeholder="Tell me about your project"
               class="mt-2 w-full rounded-xl bg-slate-900/60 border border-white/10 px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/50"
+              v-model="message"
             ></textarea>
           </div>
           <button
             type="button"
             class="inline-flex items-center justify-center rounded-xl bg-blue-500 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-400"
+            @click="sendMessage"
           >
             Send Message
           </button>
