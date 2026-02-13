@@ -35,7 +35,7 @@ const sendMessage = async () => {
 </script>
 
 <template>
-  <div class="grid grid-cols-12 gap-6">
+  <div class="flex flex-col gap-6">
     <div class="col-span-12 lg:col-span-7">
       <GlassCard>
         <h1 class="text-2xl font-semibold">Contact</h1>
@@ -89,8 +89,8 @@ const sendMessage = async () => {
       <GlassCard>
         <h3 class="font-semibold mb-3">Details</h3>
         <div class="space-y-3 text-sm text-slate-400">
-          <p>Location: Phnom Penh, Cambodia</p>
-          <p>Email: bsengleang@email.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> Location: Phnom Penh, Cambodia</p>
+          <p><i class="fas fa-envelope"></i> Email: bsengleang@email.com</p>
         </div>
       </GlassCard>
     </div>
