@@ -89,10 +89,8 @@ const sendMessage = async () => {
       <GlassCard>
         <h3 class="font-semibold mb-3">Details</h3>
         <div class="space-y-3 text-sm text-slate-400">
-          <p>Location: Your City</p>
-          <p>Email: you@email.com</p>
-          <p>GitHub: github.com/yourname</p>
-          <p>LinkedIn: linkedin.com/in/yourname</p>
+          <p>Location: Phnom Penh, Cambodia</p>
+          <p>Email: bsengleang@email.com</p>
         </div>
       </GlassCard>
     </div>
