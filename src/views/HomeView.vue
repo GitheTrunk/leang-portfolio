@@ -3,6 +3,7 @@ import { RouterLink } from 'vue-router'
 import TopBanner from '@/components/TopBanner.vue'
 import StatsRow from '@/components/StatsRow.vue'
 import ProjectCard from '@/components/ProjectCard.vue'
+import { listProjects } from '@/data/project'
 </script>
 
 <template>
@@ -23,8 +24,7 @@ import ProjectCard from '@/components/ProjectCard.vue'
         </RouterLink>
       </div>
       <div class="grid lg:grid-cols-2 gap-6">
-        <ProjectCard />
-        <ProjectCard />
+        <ProjectCard v-for="project in listProjects" :key="project.title" :project="project" />
       </div>
     </section>
   </div>

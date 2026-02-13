@@ -1,6 +1,7 @@
 <script setup>
 import GlassCard from '@/components/GlassCard.vue'
 import ProjectCard from '@/components/ProjectCard.vue'
+import { listProjects } from '@/data/project'
 </script>
 
 <template>
@@ -13,17 +14,12 @@ import ProjectCard from '@/components/ProjectCard.vue'
             A focused list of portfolio work, experiments, and client builds.
           </p>
         </div>
-        <span class="text-xs bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full"> 6 Total </span>
+        <span class="text-xs bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full">{{ listProjects.length }} Total</span>
       </div>
     </GlassCard>
 
     <div class="grid md:grid-cols-2 xl:grid-cols-2 gap-6">
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
+      <ProjectCard v-for="project in listProjects" :key="project.title" :project="project" />
     </div>
   </div>
 </template>
