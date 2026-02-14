@@ -6,12 +6,12 @@ import GlassCard from '@/components/GlassCard.vue'
 const route = useRoute()
 const isDark = ref(false)
 const navItems = [
-  { name: 'Home', path: '/' },
-  { name: 'About', path: null },
-  { name: 'Achievements', path: null },
-  { name: 'Projects', path: '/projects' },
-  { name: 'Blogs', path: null },
-  { name: 'Contact', path: '/contact' },
+  { name: 'Home', path: '/', icon: 'pi pi-home' },
+  { name: 'About', path: '/about', icon: 'pi pi-user' },
+  { name: 'Achievements', path: null, icon: 'pi pi-trophy' },
+  { name: 'Projects', path: '/projects', icon: 'pi pi-folder-open' },
+  { name: 'Blogs', path: null, icon: 'pi pi-book' },
+  { name: 'Contact', path: '/contact', icon: 'pi pi-envelope' },
 ]
 
 const applyTheme = (value) => {
@@ -51,7 +51,7 @@ onMounted(() => {
       <button
         class="w-full rounded-xl bg-slate-100 dark:bg-slate-900/70 border border-slate-200 dark:border-white/10 px-4 py-2 text-sm font-semibold text-slate-900 dark:text-slate-100 hover:bg-slate-200 dark:hover:bg-slate-800"
       >
-        Download Resume
+        <i class="pi pi-download text-sm pr-2"></i>Download Resume
       </button>
 
       <nav class="space-y-2 text-sm">
@@ -66,8 +66,8 @@ onMounted(() => {
                 : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-white/5'
             "
           >
-            <span>{{ item.name }}</span>
-            <span class="text-xs">→</span>
+            <span><i :class="item.icon + ' text-sm pr-2'"></i>{{ item.name }}</span>
+            <i class="pi pi-chevron-right text-xs"></i>
           </RouterLink>
           <!-- <div class="flex items-center rounded-xl px-4 py-2 text-slate-400 dark:text-slate-600">
             {{ item.name }}
