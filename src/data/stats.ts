@@ -1,3 +1,4 @@
+import { listProjects } from './project'
 export const stats = [
   {
     label: 'Experience',
@@ -13,7 +14,7 @@ export const stats = [
   },
   {
     label: 'Projects',
-    value: '10+',
+    value: listProjects.length,
     icon: 'pi pi-folder',
     accent: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-500/20 dark:text-emerald-300',
   },

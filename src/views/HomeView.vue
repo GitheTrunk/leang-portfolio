@@ -24,7 +24,8 @@ import { listProjects } from '@/data/project'
         </RouterLink>
       </div>
       <div class="grid lg:grid-cols-2 gap-6">
-        <ProjectCard v-for="project in listProjects" :key="project.title" :project="project" />
+        <ProjectCard :project="listProjects[0]" />
+        <ProjectCard :project="listProjects[1]" />
       </div>
     </section>
   </div>
