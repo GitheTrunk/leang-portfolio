@@ -5,6 +5,7 @@ export const techStack = [
   { name: 'Java', icon: 'devicon-java-plain' },
   { name: 'HTML', icon: 'devicon-html5-plain' },
   { name: 'CSS', icon: 'devicon-css3-plain' },
+  { name: 'Bootstrap', icon: 'devicon-bootstrap-plain' },
   { name: 'JavaScript', icon: 'devicon-javascript-plain' },
   { name: 'Node.js', icon: 'devicon-nodejs-plain-wordmark' },
   { name: 'Express', icon: 'devicon-express-original' },

@@ -1,16 +1,5 @@
 export const listProjects = [
   {
-    title: 'Game Simulation Robotcon 2025',
-    category: 'Lab Project',
-    subject: 'DC Labs',
-    description:
-      'This simulation was created to test and refine strategies for the Robocon 2025 competition.',
-    technologies: ['Python'],
-    icons: ['devicon-python-plain'],
-    imageUrl: new URL('../assets/project_sample.jpg', import.meta.url).href,
-    projectLink: 'https://github.com/aYukine/Robocon2025Sim',
-  },
-  {
     title: 'EMarket',
     category: 'School Project',
     subject: 'Internet Programming',
@@ -25,7 +14,7 @@ export const listProjects = [
       'devicon-vitejs-plain',
       'devicon-express-original',
     ],
-    imageUrl: new URL('../assets/project_sample.jpg', import.meta.url).href,
+    imageUrl: new URL('../assets/emarket_place.jpg', import.meta.url).href,
     projectLink: 'https://github.com/GitheTrunk/emarket',
   },
   {
@@ -34,16 +23,89 @@ export const listProjects = [
     subject: 'Software Engineering',
     description:
       'A system designed to manage student internships, providing tools for tracking progress, evaluations, and communication between students and supervisors.',
-    technologies: ['Vue', 'Node.js', 'Supabase', 'Tailwind CSS', 'Vite', 'Express'],
+    technologies: ['Spring', 'Java', 'Mysql', 'Tailwind CSS', 'HTML'],
+    icons: [
+      'devicon-spring-plain',
+      'devicon-java-plain',
+      'devicon-mysql-plain',
+      'devicon-tailwindcss-plain',
+      'devicon-html5-plain',
+    ],
+    imageUrl: new URL('../assets/student_internship.jpg', import.meta.url).href,
+    projectLink: 'https://github.com/GitheTrunk/student-internship-management',
+  },
+  {
+    title: 'CPU Sheduling Simulator',
+    category: 'School Project',
+    subject: 'Operating Systems',
+    description:
+      'This CPU scheduling simulator was developed to visualize and analyze the performance of various scheduling algorithms.',
+    technologies: ['Vue', 'JavaScript', 'CSS', 'HTML'],
     icons: [
       'devicon-vuejs-plain',
-      'devicon-nodejs-plain-wordmark',
-      'devicon-supabase-plain',
-      'devicon-tailwindcss-plain',
-      'devicon-vitejs-plain',
-      'devicon-express-original',
+      'devicon-javascript-plain',
+      'devicon-css3-plain',
+      'devicon-html5-plain',
     ],
-    imageUrl: new URL('../assets/project_sample.jpg', import.meta.url).href,
-    projectLink: 'https://github.com/GitheTrunk/student-internship-management',
+    imageUrl: new URL('../assets/cpu_scheduling.jpg', import.meta.url).href,
+    projectLink: 'https://github.com/GitheTrunk/cpu_scheduling_simulator',
+  },
+  {
+    title: 'Ecommerce Website',
+    category: 'School Practice',
+    subject: 'Internet Programming',
+    description:
+      'Ecommerce Website which pratice for developing a responsive and user-friendly e-commerce platform using modern web technologies.',
+    technologies: ['Vue', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'CSS', 'HTML'],
+    icons: [
+      'devicon-vuejs-plain',
+      'devicon-typescript-plain',
+      'devicon-javascript-plain',
+      'devicon-tailwindcss-plain',
+      'devicon-css3-plain',
+      'devicon-html5-plain',
+    ],
+    imageUrl: new URL('../assets/ecommerce.jpg', import.meta.url).href,
+    projectLink: 'https://github.com/GitheTrunk/ecommerce',
+  },
+  {
+    title: 'CRUD',
+    category: 'School Practice',
+    subject: 'Software Engineering',
+    description:
+      'A simple CRUD application designed to practice basic database operations and user interface design.',
+    technologies: ['Spring', 'Java', 'Mysql', 'CSS', 'Bootstrap', 'HTML'],
+    icons: [
+      'devicon-spring-plain',
+      'devicon-java-plain',
+      'devicon-mysql-plain',
+      'devicon-css3-plain',
+      'devicon-bootstrap-plain',
+      'devicon-html5-plain',
+    ],
+    imageUrl: new URL('../assets/crud_op.jpg', import.meta.url).href,
+    projectLink: 'https://github.com/GitheTrunk/springboot_TP',
+  },
+  {
+    title: 'Scoring System for Robocon 2025',
+    category: 'Lab Project',
+    subject: 'DC Labs',
+    description:
+      'This scoring system was developed to practice and evaluate the performance of our strategies for the Robocon 2025 competition.',
+    technologies: ['Python'],
+    icons: ['devicon-python-plain'],
+    imageUrl: new URL('../assets/scoring_system.jpg', import.meta.url).href,
+    projectLink: 'https://github.com/GitheTrunk/ScoringSystemRobocon',
+  },
+  {
+    title: 'Game Simulation Robotcon 2025',
+    category: 'Lab Project',
+    subject: 'DC Labs',
+    description:
+      'This simulation was created to test and refine strategies for the Robocon 2025 competition.',
+    technologies: ['Python'],
+    icons: ['devicon-python-plain'],
+    imageUrl: new URL('../assets/game_simulation.jpg', import.meta.url).href,
+    projectLink: 'https://github.com/aYukine/Robocon2025Sim',
   },
 ]
