@@ -87,6 +87,49 @@ export const listProjects = [
     projectLink: 'https://github.com/GitheTrunk/springboot_TP',
   },
   {
+    title: 'Court Booking Application',
+    category: 'School Practice',
+    subject: 'Flutter Mobile App',
+    description:
+      'A court booking application developed to practice mobile app development and user interface design.',
+    technologies: ['Flutter', 'Supabase'],
+    icons: ['devicon-flutter-plain', 'devicon-supabase-plain'],
+    imageUrl: new URL('../assets/courtBooking.jpg', import.meta.url).href,
+    projectLink: 'https://github.com/GitheTrunk/courtBook',
+  },
+  {
+    title: 'CRUD with Flutter',
+    category: 'Intern Test',
+    subject: 'Flutter Mobile App',
+    description:
+      'CRUD application developed using Flutter to practice mobile app development and database integration.',
+    technologies: ['Flutter', 'Node.js', 'Anzure ', 'Express'],
+    icons: [
+      'devicon-flutter-plain',
+      'devicon-nodejs-plain-wordmark',
+      'devicon-azure-plain',
+      'devicon-express-original',
+    ],
+    imageUrl: new URL('../assets/crud_flutter.jpg', import.meta.url).href,
+    projectLink: 'https://github.com/GitheTrunk/projectCRUD',
+  },
+  {
+    title: 'AniWorld',
+    category: 'School Project',
+    subject: 'Web Programming',
+    description:
+      'AniWorld is a web application designed to provide users with a comprehensive platform for exploring and managing their anime collections.',
+    technologies: ['HTML', 'Tailwind CSS', 'JavaScript', 'CSS'],
+    icons: [
+      'devicon-html5-plain',
+      'devicon-tailwindcss-plain',
+      'devicon-javascript-plain',
+      'devicon-css3-plain',
+    ],
+    imageUrl: new URL('../assets/aniworld.jpg', import.meta.url).href,
+    projectLink: 'https://github.com/GitheTrunk/AniWorld',
+  },
+  {
     title: 'Scoring System for Robocon 2025',
     category: 'Lab Project',
     subject: 'DC Labs',
