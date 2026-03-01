@@ -48,11 +48,14 @@ onMounted(() => {
         </div>
       </div>
 
-      <button
-        class="w-full rounded-xl bg-slate-100 dark:bg-slate-900/70 border border-slate-200 dark:border-white/10 px-4 py-2 text-sm font-semibold text-slate-900 dark:text-slate-100 hover:bg-slate-200 dark:hover:bg-slate-800"
+      <a
+        href="/Bun_Sengleang_Resume.pdf"
+        download
+        class="w-full rounded-xl bg-slate-100 dark:bg-slate-900/70 border border-slate-200 dark:border-white/10 px-4 py-3 text-sm font-semibold text-slate-900 dark:text-slate-100 hover:bg-slate-200 dark:hover:bg-slate-800 transition duration-300 flex items-center justify-center"
       >
-        <i class="pi pi-download text-sm pr-2"></i>Download Resume
-      </button>
+        <i class="pi pi-download text-sm pr-2"></i>
+        Download Resume
+      </a>
 
       <nav class="space-y-2 text-sm">
         <div v-for="item in navItems" :key="item.name">
