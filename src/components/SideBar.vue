@@ -49,7 +49,7 @@ onMounted(() => {
       </div>
 
       <a
-        href="./Bun_Sengleang_Resume.pdf"
+        href="/Resume_BUN_Sengleang.pdf"
         download
         class="w-full rounded-xl bg-slate-100 dark:bg-slate-900/70 border border-slate-200 dark:border-white/10 px-4 py-3 text-sm font-semibold text-slate-900 dark:text-slate-100 hover:bg-slate-200 dark:hover:bg-slate-800 transition duration-300 flex items-center justify-center"
       >
