@@ -2,6 +2,7 @@
 import { onMounted, ref } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import GlassCard from '@/components/GlassCard.vue'
+import resumeFile from '@/assets/Resume_BUN_Sengleang.pdf'
 
 const route = useRoute()
 const isDark = ref(false)
@@ -49,7 +50,7 @@ onMounted(() => {
       </div>
 
       <a
-        href="/Resume_BUN_Sengleang.pdf"
+        :href="resumeFile"
         download
         class="w-full rounded-xl bg-slate-100 dark:bg-slate-900/70 border border-slate-200 dark:border-white/10 px-4 py-3 text-sm font-semibold text-slate-900 dark:text-slate-100 hover:bg-slate-200 dark:hover:bg-slate-800 transition duration-300 flex items-center justify-center"
       >
